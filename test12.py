@@ -1,3 +1,4 @@
+#http://blog.naver.com/simjk98?Redirect=Log&logNo=221229266764 
 import sys
 import time
 import Adafruit_DHT
