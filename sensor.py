@@ -34,6 +34,7 @@ try :
       if humidity is not None and temperature is not None:
         print('Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)) 
         print('CO = %d'%(adcvalue))
+        print(time.strftime('%Y%m%d', time.localtime()),time.strftime('%H%M%S', time.localtime()), time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()),adcvalue,temperature, humidity, space)
         cur.execute(sql,(time.strftime('%Y%m%d', time.localtime()),time.strftime('%H%M%S', time.localtime()), time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()),adcvalue,temperature, humidity, space))
         conn.commit()
       else :
